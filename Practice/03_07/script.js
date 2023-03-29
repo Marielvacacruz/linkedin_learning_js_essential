@@ -21,5 +21,3 @@ const daniella = {
     relationship: 'sister'
 }
 
-console.log('Person:', daniella)
-console.log('age:', daniella.age)
