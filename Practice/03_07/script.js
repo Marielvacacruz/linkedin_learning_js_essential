@@ -7,3 +7,19 @@
  * - Find an object that has another object inside of it to create a nested object.
  * - Test your objects in the browser console by accessing the entire object and its specific properties.
  */
+
+
+const daniella = {
+    gender: false,
+    age : 18,
+    height: "5ft",
+    birthday: {
+        month: "may",
+        day: 5,
+        year: 2005
+    },
+    relationship: 'sister'
+}
+
+console.log('Person:', daniella)
+console.log('age:', daniella.age)
