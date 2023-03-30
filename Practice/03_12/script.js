@@ -6,3 +6,10 @@
  * - Create several objects using the class.
  * - Test the objecs by calling their properties and using their methods in the console.
  */
+
+import Book from "./Book.js";
+
+//new books; params: title, author, year published, read status
+
+const witches = new Book("Witches", "Brenda Lozano", "2019", true);
+console.log("book 1:", witches)
