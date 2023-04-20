@@ -54,3 +54,12 @@ newArticle.setAttribute("id", "everyday");
 newArticle.innerHTML = content;
 
 main.append(newArticle);
+
+// if(everydayPack.lidOpen === "true") {
+//   console.log('lid is open!');
+// } else {
+//   console.log('lid is closed')
+// }
+
+//ternary operator example:
+console.log(everydayPack.lidOpen ? 'open' : 'closed')

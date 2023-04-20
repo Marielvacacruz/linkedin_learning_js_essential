@@ -60,3 +60,10 @@ if (everydayPack.backpackAge() >= 30) {
 } else {
   console.log("Backpack is new")
 }
+
+//logical operator &&
+if (everydayPack.volume > 15 && everydayPack.pocketNum >= 5) {
+  console.log("Backpack is big")
+} else {
+  console.log("Backpack is small")
+}
