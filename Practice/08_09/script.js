@@ -55,5 +55,38 @@ const content = `
       <li class="feature backpack__lid">Lid status:<span> ${
         frogpack.lidOpen ? "open" : "closed"
       }</span></li>
-    </ul>  
+    </ul>
 `;
+
+//Helper Function
+/*
+- receives data
+-creates new figure element
+- returns figure element
+*/
+const addFigure = (data) => {
+  let newFigure = document.createElement('figure');
+  let newImg = document.createElement('img');
+  newImg.setAttribute('src', data.image);
+  newImg.setAttribute('alt', '');
+  let newDesc = document.createElement('figcaption');
+  newDesc.innerText = data.description;
+  newFigure.append(newImg, newDesc);
+  return newFigure;
+};
+
+/* - Main function
+*  - Creates new <article> element
+*  - Populates <article> with content (see const content below)
+*  - Returns <article> element to where function is called
+*/
+
+const createArticle = (frogpack) => {
+  let newArticle = document.createElement('article');
+  newArticle.innerHTML =  content;
+  newArticle.prepend(addFigure(frogpack));
+  return newArticle
+
+};
+
+document.querySelector('main').append(createArticle(frogpack))

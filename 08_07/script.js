@@ -4,8 +4,6 @@
  */
 
 const tipCalculator = () => {
-  let sum = 29.95;
-  let percentage = 18;
   let tip = sum * (percentage / 100);
   let total = sum + tip;
   console.log(`
@@ -16,4 +14,4 @@ const tipCalculator = () => {
 `);
 };
 
-tipCalculator();
+tipCalculator(29.95, 28);
